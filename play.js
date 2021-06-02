@@ -10,5 +10,12 @@ const hobbies = ['Sports', 'Cooking']; //Declaration of Arrays
 //console.log(hobbies.map(hobby=> 'Hobby: '+hobby)); //shorter way of using map functions over arrays.
 //console.log(hobbies);
 //hobbies.push('Programming'); //Adding new element to the arrays.
-const copiedArray = [hobbies]; //This way we are not copying the array, we are having an array inside of an array.
+const copiedArray = [...hobbies]; //This is called the spread operator, it adds the elements one by one, so copies the array.
+const copiedPerson = {...person}; //We copied an object using the spread operator.
 console.log(copiedArray);
+
+const toArray = (...args)=>{ //This is called the rest operator, takes all the argument that is entering to the function, and bundles them as an array, so we can acces the unlimited arguments from inside the function.
+    return args;
+};
+
+console.log(toArray(1, 2, 3));
