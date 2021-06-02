@@ -7,5 +7,7 @@ greet() { //We can also directly define the function as another solution.
 };
 
 const hobbies = ['Sports', 'Cooking']; //Declaration of Arrays
-console.log(hobbies.map(hobby=> 'Hobby: '+hobby)); //shorter way of using map functions over arrays.
+//console.log(hobbies.map(hobby=> 'Hobby: '+hobby)); //shorter way of using map functions over arrays.
+//console.log(hobbies);
+hobbies.push('Programming'); //Adding new element to the arrays.
 console.log(hobbies);
