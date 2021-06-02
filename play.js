@@ -1,9 +1,15 @@
-var name= 'Max';
-var age=29;
-var hasHobbies=true;
 
+const name= 'Max';
+let age=29;
+const hasHobbies=true;
+
+
+name ='Maximillian'; //const değişkene yeni bir değer atamak istediğimiz için kod bu noktada patlayacak.
 
 function summarizeUser(userName, userAge, userHasHobby){
     return ('Name is '+userName+', age is '+userAge+' and the user has hobbies: '+ userHasHobby);
 }
 console.log(summarizeUser(name,age,hasHobbies));
+
+//var ile değişken tanımlanır, eski bir syntaxtır. efendiler, let kullanacağız.
+//eğer bir değişkeni değiştirmeyeceğimize eminsek const kullanacağız.
