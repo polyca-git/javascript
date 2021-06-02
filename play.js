@@ -7,7 +7,6 @@ const summarizeUser = (userName, userAge, userHasHobby) => {
     return ('Name is '+userName+', age is '+userAge+' and the user has hobbies: '+ userHasHobby);
 }; //function kelimesini silip parametrelerden sonra => ekledik, arrow functionlar ile this keyword unu kullanabiliyoruz.
 
-const addOne = a => a + 1; //Tek parametre yollayaağımız için parametre tanımlarken parantezi kaldırdık.
-console.log(addOne(1));
-
+const addRandom = () => 1 + 2; //iff arrow function don't have any paramters, we should place a "()".
+console.log(addRandom());
 console.log(summarizeUser(name,age,hasHobbies));
