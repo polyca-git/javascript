@@ -7,7 +7,5 @@ greet() { //We can also directly define the function as another solution.
 };
 
 const hobbies = ['Sports', 'Cooking']; //Declaration of Arrays
-console.log(hobbies.map(hobby=>{ //Mapping the array and runnig a function for each element, it is like using a for loop, but also it creates a new arrray with the return.
-    return 'Hobby: '+hobby;
-}));
+console.log(hobbies.map(hobby=> 'Hobby: '+hobby)); //shorter way of using map functions over arrays.
 console.log(hobbies);
