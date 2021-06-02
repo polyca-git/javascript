@@ -10,5 +10,5 @@ const hobbies = ['Sports', 'Cooking']; //Declaration of Arrays
 //console.log(hobbies.map(hobby=> 'Hobby: '+hobby)); //shorter way of using map functions over arrays.
 //console.log(hobbies);
 //hobbies.push('Programming'); //Adding new element to the arrays.
-const copiedArray = hobbies.slice(); //Bu şekilde array i kopyalıyoruz.
+const copiedArray = [hobbies]; //This way we are not copying the array, we are having an array inside of an array.
 console.log(copiedArray);
